@@ -1,3 +1,10 @@
+var aHTML = document.getElementById("answer");
+var err = document.getElementById("err");
+
+function clearAns(){
+    aHTML.innerHTML = "";
+}
+
 document.getElementById("fibBtn").addEventListener("click", function fibonacci(){
     var num1 = 0;
     var num2 = 1;
