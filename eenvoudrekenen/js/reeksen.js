@@ -10,7 +10,7 @@ document.getElementById("fibBtn").addEventListener("click", function fibonacci()
     var num2 = 1;
     var input = document.getElementById("fibIn").value;
     var ans = num1 + num2;
-    var fibField = document.getElementById("fibField");
+    var fibField = document.getElementById("answer");
     fibField.innerHTML = 0;
 
     while (ans < input){
@@ -32,7 +32,7 @@ priBtn.addEventListener("click", function display() {
             uNum.push(num);
         }
     }
-    document.getElementById("priField").innerHTML = uNum.toString(); // use arr result on your own
+    document.getElementById("answer").innerHTML = uNum.toString(); // use arr result on your own
 })
 var priVal = document.getElementById("priIn").value;
 
