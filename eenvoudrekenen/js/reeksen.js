@@ -29,10 +29,10 @@ priBtn.addEventListener("click", function display() {
     var num = 2;
     for ( num = 2; num < priVal; num++ ) {
         if ( priCheck(num) ) {
-            uNum.push(num);
+            uNum.push(" "+num);
         }
     }
-    document.getElementById("answer").innerHTML = uNum.toString(); // use arr result on your own
+    document.getElementById("answer").innerHTML = uNum.toString();
 })
 var priVal = document.getElementById("priIn").value;
 

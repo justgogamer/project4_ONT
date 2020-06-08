@@ -3,6 +3,10 @@
     src: url(../font/HomepageBaukasten-Book.ttf);
 }
 
+.fontText{
+    font-family: Gotham;
+}
+
 #mobNav{
     display: none;
 }
