@@ -3,8 +3,31 @@
     src: url(../font/HomepageBaukasten-Book.ttf);
 }
 
+.fontText{
+    font-family: Gotham;
+}
+
 #mobNav{
     display: none;
+}
+
+#erSelect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#erSelect p{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EB7D56;
+}
+
+#erSelect p:hover{
+    background-color: rgb(250, 147, 110);
 }
 
 header{
@@ -340,6 +363,11 @@ footer h3, p{
     nav{
         width: 32%;
     }
+
+    #erSelect p {
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 450px){
@@ -349,6 +377,10 @@ footer h3, p{
         font-size: 45px;
         margin-right: 10px;
         font-weight: bold;
+    }
+
+    #erSelect p {
+        font-size: 10px;
     }
 
     #nBar{

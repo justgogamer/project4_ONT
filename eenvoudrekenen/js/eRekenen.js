@@ -95,3 +95,44 @@ function kwadraatSom(){
         }
     }
 }
+
+var select1 = document.getElementById("select1");
+var select2 = document.getElementById("select2");
+var select3 = document.getElementById("select3");
+var select4 = document.getElementById("select4");
+var reken1 = document.getElementById("reken1");
+var reken2 = document.getElementById("reken2");
+var reken3 = document.getElementById("reken3");
+var reken4 = document.getElementById("reken4");
+
+reken2.style.display = "none";
+reken3.style.display = "none";
+reken4.style.display = "none";
+
+select1.addEventListener("click", function(){
+    reken1.style.display = "block";
+    reken2.style.display = "none";
+    reken3.style.display = "none";
+    reken4.style.display = "none";
+});
+
+select2.addEventListener("click", function(){
+    reken2.style.display = "block";
+    reken1.style.display = "none";
+    reken3.style.display = "none";
+    reken4.style.display = "none";
+});
+
+select3.addEventListener("click", function(){
+    reken3.style.display = "block";
+    reken2.style.display = "none";
+    reken1.style.display = "none";
+    reken4.style.display = "none";
+});
+
+select4.addEventListener("click", function(){
+    reken4.style.display = "block";
+    reken2.style.display = "none";
+    reken3.style.display = "none";
+    reken1.style.display = "none";
+});

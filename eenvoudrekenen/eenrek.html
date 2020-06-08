@@ -31,38 +31,45 @@
             </ul>
         </nav>
         <section id="inhoud">
+            <section id="erSelect">
+                <p id="select1">Tafels van ...</p>
+                <p id="select2">Machtreeks</p>
+                <p id="select3">Breukenreeks</p>
+                <p id="select4">Kwadraatreeks</p>
+            </section>
             <div class="parBG3"></div>
             <br>
-            <h1>Eenvoudige reken pagina</h1>
+            <h1 class="fontText">Eenvoudige reken pagina</h1>
             <h3 id="err"></h3>
             <section id="rInhoud">
                 <section id="reken1" class="inhBlok">
-                    <h1>Tafels</h1>
+                    <h1 class="fontText">Tafels</h1>
                     <input id="tNum" type="text" name="tNum" placeholder="Tafel van ...?">
                     <button onclick="tafelSom()">Submit</button>
+                    <br>
                 </section>
-                <br>
                 <section id="reken2" class="inhBlok">
-                    <h1>Machtreeks</h1>
+                    <h1 class="fontText">Machtreeks</h1>
                     <input id="mNum" type="text" name="mNum" placeholder="Macht van ...?">
                     <button onclick="machtSom()">Submit</button>
+                    <br>
                 </section>
-                <br>
                 <section id="reken3" class="inhBlok">
-                    <h1>Breukenreeks</h1>
+                    <h1 class="fontText">Breukenreeks</h1>
                     <input id="bNum" type="text" name="bNum" placeholder="Breuk tot ...?">
                     <button onclick="breukSom()">Submit</button>
+                    <br>
                 </section>
-                <br>
                 <section id="reken4" class="inhBlok">
-                    <h1>Kwadraatreeks</h1>
+                    <h1 class="fontText">Kwadraatreeks</h1>
                     <input id="kNum" type="text" name="kNum" placeholder="Breuk tot ...?">
                     <button onclick="kwadraatSom()">Submit</button>
+                    <br>
                 </section>
                 <br>
                 <div class="inhBlok">
-                    <h1>Antwoord:</h1>
-                    <button onclick="clearAns()">Clear</button>
+                    <h1 class="fontText">Antwoord:</h1>
+                    <button id="erBtn" onclick="clearAns()">Clear</button>
                 </div>
                 <div id="answer" class="inhBlok"></div>
             </section>
