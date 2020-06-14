@@ -1,0 +1,396 @@
+@font-face{
+    font-family: Gotham;
+    src: url(../font/HomepageBaukasten-Book.ttf);
+}
+
+#mobNav{
+    display: none;
+}
+
+header{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(238, 137, 101) ;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    border-bottom: 5px solid white;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+#logo{
+    height:60px;
+    margin-left: 10px;
+}
+
+#hText{
+    font-family: "Gotham";
+    color: white;
+}
+
+#gText{
+    font-family: "Gotham";
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.parBG1{
+    background-image: url("../img/bg5.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 500px;
+}
+
+.parBG2{
+    /* background-image: url("../img/bg2.png"); */
+    background-image: url("../img/math-hero.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 500px;
+}
+
+main{
+    width:100%;
+    background-color: rgb(252, 206, 113);
+}
+
+#nBar{
+    display: block;
+    position: fixed;
+    width:20%;
+    padding-right: 10px;
+    background-color: rgb(252, 206, 113);
+    top: 85px;
+    height: calc(100% - 80px);
+}
+
+#nUl{
+    list-style: none;
+    padding-left: 15px;
+}
+
+#nUl li{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(184, 85, 49);
+    font-family: "Gotham";
+}
+
+#nUl li:hover{
+    font-size: 30px;
+    transition: ease-in 0.15s;
+}
+
+nav h1{
+    margin-left: 15px;
+    font-size: 30px;
+    color: rgb(184, 85, 49);
+    border-bottom: 2px solid rgb(184, 85, 49);
+    padding-bottom: 5px;
+    width: 80%;
+    font-family: "Gotham";
+}
+
+#inhoud{
+    margin-top: 80px;
+    width: calc(80% - 60px);
+    float: right;
+    background-color: rgb(248, 231, 198);
+    padding: 30px;
+}
+
+#rLinks{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EB7D56;
+}
+
+#rLinks div{
+    width:100%;
+    border-left: 3px solid rgb(248, 231, 198);
+    border-right: 3px solid rgb(248, 231, 198);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+#rLinks h1{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Gotham";
+}
+
+.rSub{
+    width:calc(100% - 6px);
+    background-color:rgb(241, 150, 117);
+    border-left: 3px solid rgb(248, 231, 198);
+    border-right: 3px solid rgb(248, 231, 198);
+    height:75px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rSub a{
+    text-decoration: none;
+    color: black;
+    width:100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding:0;
+    height: 100%;
+    font-family: "Gotham";
+}
+
+.rSub a:hover{
+    background-color: rgb(255, 177, 148);
+
+}
+
+#pres{
+    text-align: center;
+
+}
+
+#uInfo h1, p{
+    font-family: "Gotham";
+}
+
+#pres iframe{
+    width:95%;
+}
+
+.inhBlok{
+    width:calc(100% - 40px);
+    background-color: rgb(247, 204, 156);
+    padding:20px;
+}
+
+#over{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#over img{
+    height:300px;
+}
+
+#over div h1{
+    font-size: 50px;
+    margin:2px 0;
+    font-family: "Gotham";
+}
+
+#over div p{
+    width:75%;
+    font-size: 20px;
+    font-family: "Gotham";
+}
+
+footer{
+    width: calc(80% - 30px);
+    float: right;
+    background-color: rgb(247, 204, 156);
+    padding: 10px;
+    margin: 0;
+}
+
+footer h3, p{
+    font-family: "Gotham";
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 890.1px){
+
+    nav h1{
+        font-size: 18px;
+    }
+
+    #nUl li{
+        font-size: 15px;
+    }
+
+    #rLinks h1{
+        font-size: 17px;
+    }
+
+    #over div h1{
+        font-size: 25px;
+    }
+    
+    #over div p{
+        font-size: 17px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 890.1px){
+    #nBar{
+        display:block
+    }
+}
+
+@media only screen and (max-width: 890px) and (min-width: 450.1px){
+    #mobNav{
+        display: flex;
+        font-size: 45px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    #nBar{
+        display: none;
+        width: 25%;
+    }
+
+    #gText{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #inhoud{
+        width: calc(100% - 60px);
+    }
+
+    footer{
+        width:calc(100% - 20px);
+    }
+
+    #over{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    #over img{
+        height:250px;
+        width:250px;
+
+    }
+
+    #over p{
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    nav h1{
+        font-size: 20px;
+    }
+
+    #nUl li{
+        font-size: 20px;
+    }
+
+    #rLinks h1{
+        font-size: 14px;
+    }
+
+    #over div h1{
+        font-size: 25px;
+    }
+    
+    #over div p{
+        font-size: 17px;
+    }
+
+    nav{
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    #mobNav{
+        display: flex;
+        font-size: 45px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    #nBar{
+        display: none;
+    }
+
+    #nBar{
+        width:75%;
+    }
+
+    #gText{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #inhoud{
+        width: calc(100% - 60px);
+    }
+
+    footer{
+        width:calc(100% - 20px);
+    }
+
+    #over{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #over img{
+        height:250px;
+        width:250px;
+
+    }
+
+    #over p{
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    #rLinks div{
+        height: 75px;
+    }
+
+    #rLinks h1{
+        font-size: 10px;
+    }
+
+    #over div h1{
+        font-size: 25px;
+    }
+    
+    #over div p{
+        font-size: 17px;
+    }
+    
+    #hText{
+        font-size: 18px;
+    }
+}
