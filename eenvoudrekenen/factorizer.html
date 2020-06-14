@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathMate | Reeksen pagina</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/reeksen.js"></script>
+    <script src="js/mobNav.js"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/LogoProject.png">
+        <h1 id="hText">MathMate | Dé online rekensite</h1>
+        <div>
+            <p id="gText">Welkom bezoeker!</p>
+        </div>
+        <div id="mobNav">
+            <p>&#9776</p>
+        </div>
+    </header>
+    <main>
+        <nav id="nBar">
+            <h1>Navigatie</h1>
+            <ul id="nUl">
+                <li>Home</li>
+                <li>Rekenpagina's</li>
+                <li>Reeksenpagina's</li>
+                <li>Moeilijkere berekeningen</li>
+                <li>Dobbelpagina</li>
+                <li>Angry Birds</li>
+            </ul>
+        </nav>
+        <section id="inhoud">
+            <div class="parBG3"></div>
+            <br>
+            <h1>Eenvoudige reken pagina</h1>
+            <h3 id="err"></h3>
+            <section id="rInhoud">
+                <section id="reken1" class="inhBlok">
+                    <h1>Priemgetallen</h1>
+                    <input type="text" id="fibIn" placeholder="Fibonacci">
+                    <button id="fibBtn">Submit</button>
+                 
+                </section>
+                <br>
+                <section id="reken2" class="inhBlok">
+                    <h1>Fibonaccireeks</h1>
+                    <input type="text" id="priIn" placeholder="Priem">
+                    <button id="priBtn">Submit</button>
+                </section>
+                <br>
+                <br>
+                <div class="inhBlok">
+                    <h1>Antwoord:</h1>
+                    <button onclick="clearAns()">Clear</button>
+                </div>
+                <div id="answer" class="inhBlok"></div>
+            </section>
+            <br>
+            <div class="parBG4"></div>
+            </section>
+    </main>
+    <footer>
+        <h3>Made by Benji & Nicole</h3>
+        <p>MathMate is een wip project voor school</p>
+    </footer>
+    <script src="js/eRekenen.js"></script>
+</body>
+</html>
