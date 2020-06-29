@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathMate | Reeksen pagina</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/mobNav.js"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/LogoProject.png">
+        <h1 id="hText">MathMate | Dé online rekensite</h1>
+        <div>
+            <p id="gText">Welkom bezoeker!</p>
+        </div>
+        <div id="mobNav">
+            <p>&#9776</p>
+        </div>
+    </header>
+    <main>
+        <nav id="nBar">
+            <h1>Navigatie</h1>
+            <ul id="nUl">
+                <li>Home</li>
+                <li>Rekenpagina's</li>
+                <li>Reeksenpagina's</li>
+                <li>Moeilijkere berekeningen</li>
+                <li>Dobbelpagina</li>
+                <li>Angry Birds</li>
+            </ul>
+        </nav>
+        <section id="inhoud">
+            <div class="parBG3"></div>
+            <br>
+
+            <h1>Moeilijke rekenpagina</h1>
+
+            <h3 id="err"></h3>
+            <section id="rInhoud">
+                <section id="reken1" class="inhBlok">
+
+                    <h1>Talstelsels</h1>
+                    <h1>Van:</h1>
+                    <select id ="secVan">
+                        <option value = "2">Binary (2-tallig)</option>
+                        <option value = "3">Ternary (3-tallig)</option>
+                        <option value = "4">Quaternary (4-tallig)</option>
+                        <option value = "5">Quinary (5-tallig)</option>
+                        <option value = "6">Senary (6-tallig)</option>
+                        <option value = "7">Septenary (7-tallig)</option>
+                        <option value = "8">Octal (8-tallig)</option>
+                        <option value = "9">Nonary (9-tallig)</option>
+                        <option value = "10">Decimal (10-tallig)</option>
+                        <option value = "11">Undecimal (11-tallig)</option>
+                        <option value = "12">Duodecimal (12-tallig)</option>
+                        <option value = "13">Tridecimal (13-tallig)</option>
+                        <option value = "14">Tetradecimal (14-tallig)</option>
+                        <option value = "15">Pentadecimal (15-tallig)</option>
+                        <option value = "16">Hexadecimal (16-tallig)</option>
+                    </select>
+
+                    <h1>Naar:</h1>
+                    <select id ="secVan">
+                        <option value = "2">Binary (2-tallig)</option>
+                        <option value = "3">Ternary (3-tallig)</option>
+                        <option value = "4">Quaternary (4-tallig)</option>
+                        <option value = "5">Quinary (5-tallig)</option>
+                        <option value = "6">Senary (6-tallig)</option>
+                        <option value = "7">Septenary (7-tallig)</option>
+                        <option value = "8">Octal (8-tallig)</option>
+                        <option value = "9">Nonary (9-tallig)</option>
+                        <option value = "10">Decimal (10-tallig)</option>
+                        <option value = "11">Undecimal (11-tallig)</option>
+                        <option value = "12">Duodecimal (12-tallig)</option>
+                        <option value = "13">Tridecimal (13-tallig)</option>
+                        <option value = "14">Tetradecimal (14-tallig)</option>
+                        <option value = "15">Pentadecimal (15-tallig)</option>
+                        <option value = "16">Hexadecimal (16-tallig)</option>
+                    </select>
+                </br></br>
+                    <input type="text"  placeholder="Getal" id="ipGetal">
+                 
+                    <button id="talstelsel" onclick="convert();">Submit</button>
+                 
+                </section>
+
+                <br>
+                <section id="reken2" class="inhBlok">
+                    <h1>Factorizer</h1>
+                    <input type="text" id="factorizer" placeholder="Getal">
+                    <button onclick="factorize();" id="factorizer">Submit</button>
+                </section>
+                <br>
+                <br>
+                <div class="inhBlok">
+                    <h1>Antwoord:</h1>
+                    <button onclick="clearAns();">Clear</button>
+                </div>
+                <div id="answer" class="inhBlok"></div>
+            </section>
+            <br>
+            <div class="parBG4"></div>
+            </section>
+    </main>
+    <footer>
+        <h3>Made by Benji & Nicole</h3>
+        <p>MathMate is een wip project voor school</p>
+    </footer>
+    <script src="js/factorizer.js"></script>
+</body>
+</html>
